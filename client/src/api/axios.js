@@ -1,14 +1,14 @@
 import axios from 'axios';
 
+// Configuración directa al backend deployado
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
-  withCredentials: true,
+  baseURL: 'https://secure-services-backend.onrender.com/api',
   headers: {
     'Content-Type': 'application/json',
   },
 });
 
-// Interceptor de request → adjunta token
+// Interceptor de request → adjunta token si existe
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
@@ -28,7 +28,6 @@ api.interceptors.response.use(
   (error) => {
     if (error.response?.status === 401) {
       localStorage.removeItem('token');
-      // aquí luego redirigimos a login si hace falta
     }
 
     return Promise.reject(error);
@@ -36,4 +35,3 @@ api.interceptors.response.use(
 );
 
 export default api;
-
