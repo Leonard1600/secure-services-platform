@@ -1,0 +1,10 @@
+@"
+# General
+node_modules
+.env
+.env.*
+
+# OS
+.DS_Store
+"@ | Set-Content .gitignore
+
