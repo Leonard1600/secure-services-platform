@@ -1,5 +1,8 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import { loginRequest, registerRequest } from '../api/authService';
+import {
+  loginRequest,
+  registerRequest,
+} from '../api/authService';
 
 const AuthContext = createContext();
 
@@ -7,8 +10,8 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const login = async (credentials) => {
-    const res = await loginRequest(credentials);
+  const login = async (data) => {
+    const res = await loginRequest(data);
     localStorage.setItem('token', res.token);
     setUser(res.user);
   };
@@ -27,13 +30,15 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      setUser({}); // luego cargaremos profile real
+      setUser({}); // placeholder
     }
     setLoading(false);
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, login, register, logout, loading }}>
+    <AuthContext.Provider
+      value={{ user, login, register, logout, loading }}
+    >
       {children}
     </AuthContext.Provider>
   );

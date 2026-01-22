@@ -4,10 +4,24 @@ import { useAuth } from '../context/AuthContext';
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
 
-  if (loading) return null;
+  // Mientras se valida la sesión
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p>Cargando...</p>
+      </div>
+    );
+  }
 
-  return user ? children : <Navigate to="/auth" />;
+  // Si no hay usuario, redirigir a login
+  if (!user) {
+    return <Navigate to="/auth" replace />;
+  }
+
+  // Usuario autenticado
+  return children;
 };
 
 export default ProtectedRoute;
+
 

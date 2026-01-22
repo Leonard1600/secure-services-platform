@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Auth from '../pages/Auth';
 import Dashboard from '../pages/Dashboard';
 import ProtectedRoute from './ProtectedRoute';
@@ -19,8 +19,11 @@ const AppRoutes = () => {
           </ProtectedRoute>
         }
       />
+
+      <Route path="*" element={<Navigate to="/auth" />} />
     </Routes>
   );
 };
 
 export default AppRoutes;
+
