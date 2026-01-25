@@ -29,8 +29,8 @@ export const registerRequest = async (userData) => {
   return data;
 };
 
-// PROFILE (para luego)
-export const profileRequest = async () => {
-  const { data } = await API.get('/auth/profile');
+// ME (usuario autenticado)
+export const meRequest = async () => {
+  const { data } = await API.get('/auth/me');
   return data;
 };

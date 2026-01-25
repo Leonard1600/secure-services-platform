@@ -1,27 +1,28 @@
-import { Navigate } from 'react-router-dom';
+import { Navigate, Outlet } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
-const ProtectedRoute = ({ children }) => {
+const ProtectedRoute = () => {
   const { user, loading } = useAuth();
+  const token = localStorage.getItem('token');
 
-  // Mientras se valida la sesión
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p>Cargando...</p>
+      <div className="min-h-screen flex items-center justify-center bg-white">
+        <span className="text-gray-500 text-sm">
+          Validando sesión...
+        </span>
       </div>
     );
   }
 
-  // Si no hay usuario, redirigir a login
-  if (!user) {
+  if (!token || !user) {
     return <Navigate to="/auth" replace />;
   }
 
-  // Usuario autenticado
-  return children;
+  return <Outlet />;
 };
 
 export default ProtectedRoute;
+
 
 
