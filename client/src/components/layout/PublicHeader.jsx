@@ -2,72 +2,50 @@ import { Link, NavLink } from 'react-router-dom';
 
 const PublicHeader = () => {
   return (
-    <header style={{ borderBottom: '1px solid #e5e7eb' }}>
-      <div
-        style={{
-          maxWidth: '1280px',
-          margin: '0 auto',
-          padding: '16px 24px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-        }}
-      >
+    <header className="border-b border-gray-200 bg-white">
+      <div className="max-w-7xl mx-auto px-4 py-4">
+
         {/* BRAND */}
-        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <span style={{ display: 'block', fontSize: '18px', fontWeight: 600 }}>
-            Infraestructura Tecnológica
-          </span>
-          <span style={{ display: 'block', fontSize: '14px', color: '#6b7280' }}>
-            Infraestructura, Redes y Seguridad Electrónica
-          </span>
-        </Link>
-
-        {/* NAV + CTA */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '32px',
-          }}
-        >
-          <nav aria-label="Navegación principal">
-            <ul
-              style={{
-                display: 'flex',
-                gap: '24px',
-                listStyle: 'none',
-                padding: 0,
-                margin: 0,
-              }}
-            >
-              <li>
-                <NavLink to="/">Inicio</NavLink>
-              </li>
-              <li>
-                <NavLink to="/services">Servicios</NavLink>
-              </li>
-              <li>
-                <NavLink to="/contact">Contacto</NavLink>
-              </li>
-            </ul>
-          </nav>
-
-          <Link
-            to="/auth"
-            style={{
-              padding: '8px 20px',
-              borderRadius: '8px',
-              backgroundColor: '#1d4ed8',
-              color: '#ffffff',
-              fontWeight: 600,
-              textDecoration: 'none',
-              whiteSpace: 'nowrap',
-            }}
-          >
-            Acceso clientes
+        <div className="text-center md:text-left mb-4">
+          <Link to="/" className="no-underline text-inherit">
+            <span className="block text-lg font-semibold text-gray-900">
+              Infraestructura Tecnológica
+            </span>
+            <span className="block text-sm text-gray-500">
+              Infraestructura tecnológica inteligente
+            </span>
           </Link>
         </div>
+
+        {/* NAVIGATION */}
+        <nav aria-label="Navegación principal">
+          <ul className="flex flex-wrap justify-center md:justify-start gap-6 text-sm font-medium text-gray-700">
+            <li>
+              <NavLink to="/" className="hover:text-blue-600 transition">
+                Inicio
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/services" className="hover:text-blue-600 transition">
+                Servicios
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" className="hover:text-blue-600 transition">
+                Contacto
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/auth"
+                className="text-blue-600 font-semibold hover:underline"
+              >
+                Acceso clientes
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+
       </div>
     </header>
   );
