@@ -13,21 +13,13 @@ const Home = () => {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="relative z-10 max-w-6xl mx-auto px-6 text-center"
         >
-          {/* SUBTÍTULO SUPERIOR CORREGIDO */}
-          <p className="text-xs sm:text-sm tracking-widest text-gray-400 uppercase mb-4 md:mb-6">
-            Ing. Leonard Figuera
-          </p>
-
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 md:mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-3 md:mb-4">
             Servicios seguros inteligentes
-            <span className="block text-blue-500 mt-3 md:mt-4">
-              para operaciones empresariales críticas
-            </span>
           </h1>
 
-          {/* SUBTÍTULO PROFESIONAL */}
-          <p className="text-sm sm:text-base md:text-lg text-gray-400 font-medium mb-8">
-            Ingeniero Leonard Figuera
+          {/* IDENTIDAD PROFESIONAL */}
+          <p className="text-sm sm:text-base md:text-lg text-gray-400 font-medium mb-6 md:mb-8">
+            Ing. Leonard Figuera
           </p>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto mb-10 md:mb-14 leading-relaxed">
