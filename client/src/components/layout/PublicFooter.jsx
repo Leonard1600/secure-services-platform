@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 const PublicFooter = () => {
   return (
     <footer className="bg-gray-950 text-gray-300">
-      <div className="max-w-7xl mx-auto px-6 py-20">
+      <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
 
         {/* ================= TOP ================= */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-14">
 
           {/* ================= BRAND ================= */}
           <div>
@@ -20,15 +20,15 @@ const PublicFooter = () => {
                   Secure<span className="text-blue-500">Services</span>
                 </span>
                 <span className="text-xs text-gray-500">
-                  Seguridad electrónica & Infraestructura TI
+                  Seguridad electrónica e infraestructura TI
                 </span>
               </div>
             </div>
 
             <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
               Soluciones profesionales en infraestructura tecnológica, redes y
-              seguridad electrónica para empresas que requieren continuidad
-              operativa, soporte técnico confiable y crecimiento sostenible.
+              seguridad electrónica orientadas a empresas que requieren
+              continuidad operativa, control técnico y soporte confiable.
             </p>
           </div>
 
@@ -38,21 +38,21 @@ const PublicFooter = () => {
               Contacto
             </h4>
 
-            <ul className="space-y-3 text-sm text-gray-400">
+            <ul className="space-y-4 text-sm text-gray-400">
               <li>
-                <span className="block text-gray-500">
+                <span className="block text-gray-500 mb-1">
                   Correo electrónico
                 </span>
                 <a
                   href="mailto:contacto@secureservices.com"
-                  className="hover:text-white transition"
+                  className="hover:text-white transition break-all"
                 >
                   contacto@secureservices.com
                 </a>
               </li>
 
               <li>
-                <span className="block text-gray-500">
+                <span className="block text-gray-500 mb-1">
                   Teléfono
                 </span>
                 <a
@@ -68,12 +68,13 @@ const PublicFooter = () => {
         </div>
 
         {/* ================= BOTTOM ================= */}
-        <div className="border-t border-gray-800 mt-16 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
-          <span>
+        <div className="border-t border-gray-800 mt-14 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+
+          <span className="text-center md:text-left">
             © {new Date().getFullYear()} Secure Services. Todos los derechos reservados.
           </span>
 
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             <a href="#" className="hover:text-gray-300 transition">
               Política de privacidad
             </a>
@@ -83,11 +84,17 @@ const PublicFooter = () => {
           </div>
         </div>
 
+        {/* ================= SIGNATURE ================= */}
+        <div className="mt-6 text-center text-xs text-gray-600">
+          Leonard Figuera <span aria-hidden="true">✦</span>
+        </div>
+
       </div>
     </footer>
   );
 };
 
 export default PublicFooter;
+
 
 

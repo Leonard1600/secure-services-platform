@@ -8,84 +8,85 @@ const Home = () => {
       {/* ================= HERO ================= */}
       <header className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-900 via-gray-950 to-black">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="relative z-10 max-w-6xl mx-auto px-6 text-center"
         >
-          <p className="text-sm tracking-widest text-gray-400 uppercase mb-6">
-            Infraestructura, Redes y Seguridad Electrónica
+          <p className="text-xs sm:text-sm tracking-widest text-gray-400 uppercase mb-6">
+            Infraestructura tecnológica · Redes · Seguridad electrónica
           </p>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8">
-            Infraestructura tecnológica y
+            Soluciones tecnológicas
             <span className="block text-blue-500 mt-4">
-              sistemas de seguridad inteligentes
+              para operaciones empresariales críticas
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-16 leading-relaxed">
-            Diseñamos e implementamos soluciones en infraestructura tecnológica,
-            redes y seguridad electrónica para empresas que requieren control,
-            continuidad operativa y soporte técnico confiable.
+          <p className="text-base md:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto mb-14 leading-relaxed">
+            Diseñamos, implementamos y mantenemos infraestructura tecnológica,
+            redes y sistemas de seguridad electrónica para organizaciones que
+            requieren continuidad operativa, control técnico y soporte profesional confiable.
           </p>
 
-          <div className="flex justify-center gap-5 flex-wrap">
+          <div className="flex justify-center gap-4 sm:gap-5 flex-wrap">
             <Link
               to="/contact"
-              className="px-9 py-4 rounded-xl bg-blue-600 text-white font-medium shadow-xl hover:bg-blue-700 transition"
+              className="px-8 py-4 rounded-xl bg-blue-600 text-white font-medium shadow-xl hover:bg-blue-700 transition"
             >
               Solicitar asesoría técnica
             </Link>
 
             <Link
               to="/services"
-              className="px-9 py-4 rounded-xl border border-gray-700 text-gray-200 hover:bg-gray-800 transition"
+              className="px-8 py-4 rounded-xl border border-gray-700 text-gray-200 hover:bg-gray-800 transition"
             >
-              Explorar soluciones
+              Ver servicios
             </Link>
           </div>
         </motion.div>
       </header>
 
       {/* ================= SERVICIOS ================= */}
-      <section className="py-36 px-6 bg-gray-950">
+      <section className="py-28 md:py-36 px-6 bg-gray-950">
         <div className="max-w-6xl mx-auto text-center">
-          <div className="mb-24">
+          <div className="mb-20 md:mb-24">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Servicios técnicos especializados
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-              Soluciones diseñadas para entornos empresariales que exigen
-              estabilidad, control y soporte profesional continuo.
+            <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
+              Acompañamos a empresas en la planificación, implementación y
+              gestión de su infraestructura tecnológica y sistemas de seguridad,
+              con un enfoque en estabilidad, escalabilidad y continuidad operativa.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
             {[
               {
                 title: 'Seguridad electrónica',
-                desc: 'Videovigilancia, control de accesos, alarmas y sistemas de monitoreo diseñados para entornos críticos.'
+                desc: 'Diseño e implementación de sistemas de videovigilancia, control de accesos, alarmas y monitoreo para entornos empresariales y operativos.'
               },
               {
                 title: 'Infraestructura tecnológica',
-                desc: 'Redes, servidores, cableado estructurado y soluciones de respaldo para continuidad operativa.'
+                desc: 'Redes, servidores, cableado estructurado y soluciones de respaldo orientadas a garantizar rendimiento, disponibilidad y crecimiento.'
               },
               {
                 title: 'Gestión y soporte técnico',
-                desc: 'Soporte especializado, gestión de incidencias y mantenimiento técnico para empresas.'
+                desc: 'Soporte técnico especializado, mantenimiento preventivo y gestión de incidencias para reducir riesgos y evitar interrupciones.'
               }
             ].map(service => (
               <motion.article
                 key={service.title}
                 whileHover={{ y: -6 }}
                 transition={{ duration: 0.25, ease: 'easeOut' }}
-                className="bg-gray-900/80 border border-gray-800 rounded-2xl p-10 shadow-lg hover:shadow-2xl"
+                className="bg-gray-900/80 border border-gray-800 rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl"
               >
-                <h3 className="text-xl font-semibold mb-4 text-blue-500">
+                <h3 className="text-lg md:text-xl font-semibold mb-4 text-blue-500">
                   {service.title}
                 </h3>
-                <p className="text-gray-400 leading-relaxed">
+                <p className="text-gray-400 leading-relaxed text-sm md:text-base">
                   {service.desc}
                 </p>
               </motion.article>
@@ -95,7 +96,7 @@ const Home = () => {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="relative bg-gradient-to-r from-blue-700 to-blue-600 py-32 px-6 text-white text-center">
+      <section className="relative bg-gradient-to-r from-blue-700 to-blue-600 py-24 md:py-32 px-6 text-white text-center">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -104,17 +105,17 @@ const Home = () => {
           className="max-w-3xl mx-auto"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Un proveedor técnico para operaciones críticas
+            Un socio tecnológico para operaciones que no pueden detenerse
           </h2>
 
-          <p className="mb-14 text-blue-100 text-lg leading-relaxed">
-            Seguridad, infraestructura y soporte técnico diseñados para empresas
-            que no pueden permitirse interrupciones.
+          <p className="mb-12 text-blue-100 text-base md:text-lg leading-relaxed">
+            Infraestructura, seguridad electrónica y soporte técnico diseñados
+            para empresas que dependen de sistemas confiables y atención profesional continua.
           </p>
 
           <Link
             to="/contact"
-            className="inline-block bg-white text-blue-700 px-9 py-4 rounded-xl font-medium shadow-xl hover:bg-gray-100 transition"
+            className="inline-block bg-white text-blue-700 px-8 py-4 rounded-xl font-medium shadow-xl hover:bg-gray-100 transition"
           >
             Hablar con un especialista
           </Link>
@@ -126,5 +127,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
