@@ -11,16 +11,17 @@ const PublicFooter = () => {
           {/* ================= BRAND ================= */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <span className="flex items-center justify-center w-9 h-9 rounded-xl bg-blue-600 text-white text-sm font-bold shadow-sm">
-                SS
+              {/* LOGO (MISMO QUE PUBLIC HEADER) */}
+              <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-blue-600 text-white font-bold text-sm shadow-sm">
+                SSI
               </span>
 
               <div className="flex flex-col leading-tight">
                 <span className="text-base font-semibold text-white">
-                  Secure<span className="text-blue-500">Services</span>
+                  Servicios Seguros Inteligentes
                 </span>
                 <span className="text-xs text-gray-500">
-                  Seguridad electrónica e infraestructura TI
+                  Infraestructura tecnológica inteligente
                 </span>
               </div>
             </div>
@@ -44,10 +45,10 @@ const PublicFooter = () => {
                   Correo electrónico
                 </span>
                 <a
-                  href="mailto:leonardfiguera.1@gmail.com"
+                  href="mailto:leonardfiguera@gmail.com"
                   className="hover:text-white transition break-all"
                 >
-                  leonardfiguera.1@gmail.com
+                  leonardfiguera@gmail.com
                 </a>
               </li>
 
@@ -71,7 +72,7 @@ const PublicFooter = () => {
         <div className="border-t border-gray-800 mt-14 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
 
           <span className="text-center md:text-left">
-            © {new Date().getFullYear()} Secure Services. Todos los derechos reservados.
+            © {new Date().getFullYear()} Servicios Seguros Inteligentes. Todos los derechos reservados.
           </span>
 
           <div className="flex flex-wrap justify-center gap-6">
