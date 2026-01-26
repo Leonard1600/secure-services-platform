@@ -41,12 +41,12 @@ const Contact = () => {
                 Teléfono / WhatsApp
               </p>
               <a
-                href="https://wa.me/10000000000"
+                href="https://wa.me/584249260404"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 font-medium hover:underline text-base"
               >
-                +1 000 000 0000
+                04249260404
               </a>
             </div>
 
@@ -56,17 +56,17 @@ const Contact = () => {
                 Correo electrónico
               </p>
               <a
-                href="mailto:contacto@secureservices.com"
+                href="mailto:leonardfiguera@gmail.com"
                 className="text-blue-600 font-medium hover:underline text-base"
               >
-                contacto@secureservices.com
+                leonardfiguera@gmail.com
               </a>
             </div>
 
             {/* CTA */}
             <div className="pt-2">
               <a
-                href="https://wa.me/10000000000"
+                href="https://wa.me/584249260404"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-3 rounded-xl font-medium shadow-md hover:bg-blue-700 transition"
