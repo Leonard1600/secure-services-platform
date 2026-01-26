@@ -17,12 +17,17 @@ const Home = () => {
             Servicios seguros inteligentes · Infraestructura y seguridad TI
           </p>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 md:mb-8">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 md:mb-6">
             Servicios seguros inteligentes
             <span className="block text-blue-500 mt-3 md:mt-4">
               para operaciones empresariales críticas
             </span>
           </h1>
+
+          {/* SUBTÍTULO PROFESIONAL */}
+          <p className="text-sm sm:text-base md:text-lg text-gray-400 font-medium mb-8">
+            Ingeniero Leonard Figuera
+          </p>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto mb-10 md:mb-14 leading-relaxed">
             Acompañamos a empresas y organizaciones en el diseño, implementación

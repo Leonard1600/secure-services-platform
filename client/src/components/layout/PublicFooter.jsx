@@ -44,10 +44,10 @@ const PublicFooter = () => {
                   Correo electrónico
                 </span>
                 <a
-                  href="mailto:contacto@secureservices.com"
+                  href="mailto:leonardfiguera.1@gmail.com"
                   className="hover:text-white transition break-all"
                 >
-                  contacto@secureservices.com
+                  leonardfiguera.1@gmail.com
                 </a>
               </li>
 
@@ -56,10 +56,10 @@ const PublicFooter = () => {
                   Teléfono
                 </span>
                 <a
-                  href="tel:+10000000000"
+                  href="tel:04249260404"
                   className="hover:text-white transition"
                 >
-                  +1 000 000 0000
+                  04249260404
                 </a>
               </li>
             </ul>
@@ -86,7 +86,7 @@ const PublicFooter = () => {
 
         {/* ================= SIGNATURE ================= */}
         <div className="mt-6 text-center text-xs text-gray-600">
-          Leonard Figuera <span aria-hidden="true">✦</span>
+          Ingeniero Leonard Figuera
         </div>
 
       </div>
