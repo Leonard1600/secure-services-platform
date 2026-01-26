@@ -14,20 +14,21 @@ const Home = () => {
           className="relative z-10 max-w-6xl mx-auto px-6 text-center"
         >
           <p className="text-xs sm:text-sm tracking-widest text-gray-400 uppercase mb-4 md:mb-6">
-            Infraestructura tecnológica · Redes · Seguridad electrónica
+            Servicios seguros inteligentes · Infraestructura y seguridad TI
           </p>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 md:mb-8">
-            Soluciones tecnológicas
+            Servicios seguros inteligentes
             <span className="block text-blue-500 mt-3 md:mt-4">
               para operaciones empresariales críticas
             </span>
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto mb-10 md:mb-14 leading-relaxed">
-            Diseñamos, implementamos y mantenemos infraestructura tecnológica,
-            redes y sistemas de seguridad electrónica para organizaciones que
-            requieren continuidad operativa, control técnico y soporte profesional confiable.
+            Acompañamos a empresas y organizaciones en el diseño, implementación
+            y gestión de infraestructura tecnológica y sistemas de seguridad
+            electrónica, garantizando continuidad operativa, control técnico y
+            soporte profesional confiable.
           </p>
 
           <div className="flex justify-center gap-4 sm:gap-5 flex-wrap">
@@ -56,9 +57,9 @@ const Home = () => {
               Servicios técnicos especializados
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base md:text-lg leading-relaxed">
-              Acompañamos a empresas en la planificación, implementación y
-              gestión de su infraestructura tecnológica y sistemas de seguridad,
-              con un enfoque en estabilidad, escalabilidad y continuidad operativa.
+              Ofrecemos soluciones técnicas orientadas a estabilidad,
+              escalabilidad y continuidad operativa, alineadas a los objetivos
+              reales del negocio.
             </p>
           </div>
 
@@ -66,15 +67,15 @@ const Home = () => {
             {[
               {
                 title: 'Seguridad electrónica',
-                desc: 'Diseño e implementación de sistemas de videovigilancia, control de accesos, alarmas y monitoreo para entornos empresariales y operativos.'
+                desc: 'Sistemas de videovigilancia, control de accesos y monitoreo diseñados para proteger activos, instalaciones y operaciones críticas.'
               },
               {
                 title: 'Infraestructura tecnológica',
-                desc: 'Redes, servidores, cableado estructurado y soluciones de respaldo orientadas a garantizar rendimiento, disponibilidad y crecimiento.'
+                desc: 'Redes, servidores, cableado estructurado y soluciones de respaldo enfocadas en rendimiento, disponibilidad y crecimiento.'
               },
               {
                 title: 'Gestión y soporte técnico',
-                desc: 'Soporte técnico especializado, mantenimiento preventivo y gestión de incidencias para reducir riesgos y evitar interrupciones.'
+                desc: 'Soporte técnico especializado y mantenimiento preventivo para reducir riesgos, fallos e interrupciones operativas.'
               }
             ].map(service => (
               <motion.article
@@ -109,8 +110,9 @@ const Home = () => {
           </h2>
 
           <p className="mb-10 md:mb-12 text-blue-100 text-sm sm:text-base md:text-lg leading-relaxed">
-            Infraestructura, seguridad electrónica y soporte técnico diseñados
-            para empresas que dependen de sistemas confiables y atención profesional continua.
+            Infraestructura, seguridad electrónica y soporte técnico pensados
+            para empresas que dependen de sistemas confiables y atención
+            profesional continua.
           </p>
 
           <Link
